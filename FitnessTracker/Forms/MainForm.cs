@@ -5,11 +5,17 @@ using FitnessTracker.UI;
 
 namespace FitnessTracker.Forms;
 
+/// <summary>
+/// Main application form displaying user's workout history
+/// </summary>
 public partial class MainForm : Form
 {
     private readonly Db _db;
     private readonly WorkoutService _workoutService;
 
+    /// <summary>
+    /// Initializes the main form and loads user data
+    /// </summary>
     public MainForm(Db db)
     {
         _db = db;
@@ -18,6 +24,9 @@ public partial class MainForm : Form
         LoadUserInfo();
     }
 
+    /// <summary>
+    /// Loads current user information and their workouts
+    /// </summary>
     private void LoadUserInfo()
     {
         if (AppSession.CurrentUser == null) return;
@@ -25,13 +34,20 @@ public partial class MainForm : Form
         LoadWorkouts();
     }
 
+    /// <summary>
+    /// Loads and displays all workouts for the current user
+    /// </summary>
     private void LoadWorkouts()
     {
         if (AppSession.CurrentUser == null) return;
 
+        // Clear existing workout cards
         flpWorkouts.Controls.Clear();
+        
+        // Fetch workouts from database
         var workouts = _workoutService.GetWorkouts(AppSession.CurrentUserId);
 
+        // Create and add a card for each workout
         foreach (var workout in workouts)
         {
             var workoutCard = CreateWorkoutCard(workout);
@@ -39,6 +55,9 @@ public partial class MainForm : Form
         }
     }
 
+    /// <summary>
+    /// Creates a visual card displaying workout information
+    /// </summary>
     private Panel CreateWorkoutCard(Workout workout)
     {
         var cardWidth = flpWorkouts.Width - 20;
@@ -118,6 +137,9 @@ public partial class MainForm : Form
         return card;
     }
 
+    /// <summary>
+    /// Opens the Add Workout form and refreshes the list if a workout was added
+    /// </summary>
     private void btnAddWorkout_Click(object sender, EventArgs e)
     {
         var addWorkoutForm = new AddWorkoutForm(_db);
@@ -127,7 +149,9 @@ public partial class MainForm : Form
         }
     }
 
-
+    /// <summary>
+    /// Handles logout button click - confirms and restarts application
+    /// </summary>
     private void btnLogout_Click(object sender, EventArgs e)
     {
         var result = MessageBox.Show("Are you sure you want to logout?", "Logout",
@@ -140,6 +164,9 @@ public partial class MainForm : Form
         }
     }
 
+    /// <summary>
+    /// Clears session when form is closing
+    /// </summary>
     private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
     {
         AppSession.Logout();

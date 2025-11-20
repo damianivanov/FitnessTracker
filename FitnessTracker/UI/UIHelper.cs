@@ -1,3 +1,4 @@
+// Дамян Николаев Иванов - ФН: F123976
 using System.Drawing.Drawing2D;
 
 namespace FitnessTracker.UI;

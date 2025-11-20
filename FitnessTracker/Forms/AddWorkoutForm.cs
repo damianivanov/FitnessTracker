@@ -5,12 +5,22 @@ using FitnessTracker.UI;
 
 namespace FitnessTracker.Forms;
 
+/// <summary>
+/// Form for creating a new workout with exercises, reps, and weights
+/// </summary>
 public partial class AddWorkoutForm : Form
 {
     private readonly Db _db;
     private readonly WorkoutService _workoutService;
+    
+    /// <summary>
+    /// List of exercises being added to this workout
+    /// </summary>
     private List<WorkoutExercise> _exercises = new();
 
+    /// <summary>
+    /// Initializes the Add Workout form
+    /// </summary>
     public AddWorkoutForm(Db db)
     {
         _db = db;
@@ -19,6 +29,9 @@ public partial class AddWorkoutForm : Form
         dtpWorkoutDate.Value = DateTime.Today;
     }
 
+    /// <summary>
+    /// Refreshes the visual display of exercises in the workout
+    /// </summary>
     private void RefreshExerciseList()
     {
         flpExercises.Controls.Clear();
@@ -30,6 +43,9 @@ public partial class AddWorkoutForm : Form
         }
     }
 
+    /// <summary>
+    /// Creates a visual card for a single exercise in the workout
+    /// </summary>
     private Panel CreateExerciseCard(WorkoutExercise exercise)
     {
         var cardWidth = (flpExercises.ClientSize.Width - 40) / 2;
@@ -81,6 +97,9 @@ public partial class AddWorkoutForm : Form
         return card;
     }
 
+    /// <summary>
+    /// Removes an exercise from the workout after confirmation
+    /// </summary>
     private void RemoveExerciseFromList(WorkoutExercise exercise)
     {
         var result = MessageBox.Show("Are you sure you want to remove this exercise?", 
@@ -93,6 +112,9 @@ public partial class AddWorkoutForm : Form
         }
     }
 
+    /// <summary>
+    /// Opens dialog to add a new exercise to the workout
+    /// </summary>
     private void btnAddExercise_Click(object sender, EventArgs e)
     {
         var addExerciseDialog = new AddExerciseDialog(_db);
@@ -103,14 +125,21 @@ public partial class AddWorkoutForm : Form
         RefreshExerciseList();
     }
 
+    /// <summary>
+    /// Shows info message about how to remove exercises
+    /// </summary>
     private void btnRemoveExercise_Click(object sender, EventArgs e)
     {
         MessageBox.Show("Click the × button on an exercise card to remove it.", "Info", 
             MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 
+    /// <summary>
+    /// Validates and saves the workout to the database
+    /// </summary>
     private void btnSave_Click(object sender, EventArgs e)
     {
+        // Validate workout name
         if (string.IsNullOrWhiteSpace(txtWorkoutName.Text))
         {
             MessageBox.Show("Please enter a workout name.", "Validation Error", 
@@ -119,6 +148,7 @@ public partial class AddWorkoutForm : Form
             return;
         }
 
+        // Warn if no exercises added
         if (_exercises.Count == 0)
         {
             var result = MessageBox.Show("You haven't added any exercises. Do you want to save anyway?", 
@@ -128,6 +158,7 @@ public partial class AddWorkoutForm : Form
 
         try
         {
+            // Verify user session is still valid
             if (AppSession.CurrentUser == null)
             {
                 MessageBox.Show("User session expired. Please login again.", "Error", 
@@ -143,7 +174,7 @@ public partial class AddWorkoutForm : Form
                 txtWorkoutName.Text.Trim(), 
                 dtpWorkoutDate.Value);
 
-            // Add exercises to the workout
+            // Add all exercises to the workout
             foreach (var exercise in _exercises)
             {
                 _workoutService.AddExercise(workout.Id, exercise.ExerciseId, 
@@ -163,6 +194,9 @@ public partial class AddWorkoutForm : Form
         }
     }
 
+    /// <summary>
+    /// Cancels workout creation and closes the form
+    /// </summary>
     private void btnCancel_Click(object sender, EventArgs e)
     {
         DialogResult = DialogResult.Cancel;

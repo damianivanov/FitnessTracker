@@ -5,12 +5,21 @@ using FitnessTracker.UI;
 
 namespace FitnessTracker.Forms;
 
+/// <summary>
+/// Registration form for creating new user accounts
+/// </summary>
 public partial class RegisterForm : Form
 {
     private readonly AuthService _authService;
 
+    /// <summary>
+    /// The successfully registered user, or null if registration was cancelled
+    /// </summary>
     public User? RegisteredUser { get; private set; }
 
+    /// <summary>
+    /// Initializes the registration form
+    /// </summary>
     public RegisterForm(Db db)
     {
         _authService = new AuthService(db);
@@ -20,6 +29,9 @@ public partial class RegisterForm : Form
         btnRegister.AddPrimaryHover();
     }
 
+    /// <summary>
+    /// Handles registration button click - validates input and creates new user account
+    /// </summary>
     private void btnRegister_Click(object sender, EventArgs e)
     {
         var name = txtName.Text.Trim();
@@ -27,7 +39,7 @@ public partial class RegisterForm : Form
         var password = txtPassword.Text;
         var confirmPassword = txtConfirmPassword.Text;
 
-        // Validation
+        // Validate all input fields
         if (string.IsNullOrEmpty(name))
         {
             MessageBox.Show("Please enter your name.", "Validation Error", 
@@ -78,22 +90,28 @@ public partial class RegisterForm : Form
 
         try
         {
+            // Create new user account
             RegisteredUser = _authService.Register(name, username, password);
             DialogResult = DialogResult.OK;
             Close();
         }
         catch (ArgumentException ex)
         {
+            // Handle validation errors (e.g., username already taken)
             MessageBox.Show(ex.Message, "Registration Failed", 
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         catch (Exception ex)
         {
+            // Handle unexpected errors
             MessageBox.Show($"An error occurred: {ex.Message}", "Error", 
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 
+    /// <summary>
+    /// Allows Enter key in confirm password field to trigger registration
+    /// </summary>
     private void txtConfirmPassword_KeyPress(object sender, KeyPressEventArgs e)
     {
         if (e.KeyChar == (char)Keys.Enter)

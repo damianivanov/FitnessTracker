@@ -4,14 +4,22 @@ using LiteDB;
 
 namespace FitnessTracker.Core.Repositories;
 
+/// <summary>
+/// Repository for managing exercise templates with specific query methods
+/// </summary>
 public class ExerciseRepository: BaseRepository<Exercise>
 {
+    /// <summary>
+    /// Initializes the exercise repository with unique index on Name
+    /// </summary>
     public ExerciseRepository(LiteDatabase db) : base(db, "Exercises")
     {
+        // Exercise names must be unique
         _collection.EnsureIndex(e => e.Name, unique: true);
     }
+    
+    /// <summary>
+    /// Finds an exercise by its name
+    /// </summary>
     public Exercise? GetByName(string name) => _collection.FindOne(e => e.Name == name);
-    public IEnumerable<Exercise> GetByMuscleGroup(string muscleGroup) => _collection.Find(e => e.MuscleGroup == muscleGroup);
-    public IEnumerable<Exercise> GetBySecondaryMuscleGroup(string secondaryMuscleGroup) => _collection.Find(e => e.SecondaryMuscleGroup == secondaryMuscleGroup);
-    public IEnumerable<Exercise> GetByCategory(string category) => _collection.Find(e => e.Category == category);
 }
