@@ -1,3 +1,4 @@
+using System.Windows.Forms;
 using FitnessTracker.UI;
 
 namespace FitnessTracker.Forms;
@@ -44,7 +45,7 @@ partial class MainForm
         this.panelTop.Controls.Add(this.lblTitle);
         this.panelTop.Controls.Add(this.lblWelcome);
         this.panelTop.Controls.Add(this.btnLogout);
-        this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+        this.panelTop.Dock = DockStyle.Top;
         this.panelTop.Location = new System.Drawing.Point(0, 0);
         this.panelTop.Name = "panelTop";
         this.panelTop.Size = new System.Drawing.Size(900, 100);
@@ -65,7 +66,7 @@ partial class MainForm
         // 
         // lblWelcome
         // 
-        this.lblWelcome.Anchor = ((AnchorStyles)((AnchorStyles.Top | AnchorStyles.Right)));
+        this.lblWelcome.Anchor = ((AnchorStyles.Top | AnchorStyles.Right));
         this.lblWelcome.Font = new System.Drawing.Font("Segue UI", 12F, System.Drawing.FontStyle.Bold);
         this.lblWelcome.ForeColor = UiConstants.Colors.TextPrimary;
         this.lblWelcome.Location = new System.Drawing.Point(500, 30);
@@ -79,7 +80,7 @@ partial class MainForm
         // btnLogout
         // 
         this.btnLogout.StyleDanger();
-        this.btnLogout.Anchor = ((AnchorStyles)((AnchorStyles.Top | AnchorStyles.Right)));
+        this.btnLogout.Anchor = ((AnchorStyles.Top | AnchorStyles.Right));
         this.btnLogout.Location = new System.Drawing.Point(790, 30);
         this.btnLogout.Name = "btnLogout";
         this.btnLogout.Size = new System.Drawing.Size(90, UiConstants.Button.HeightSmall);
@@ -95,7 +96,7 @@ partial class MainForm
         this.panelMain.Controls.Add(this.btnAddWorkout);
         this.panelMain.Controls.Add(this.lblWorkoutsTitle);
         this.panelMain.Controls.Add(this.flpWorkouts);
-        this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+        this.panelMain.Dock = DockStyle.Fill;
         this.panelMain.Location = new System.Drawing.Point(0, 100);
         this.panelMain.Name = "panelMain";
         this.panelMain.Padding = new Padding(0, 20, 0, 20);
@@ -118,7 +119,7 @@ partial class MainForm
         // btnAddWorkout
         // 
         this.btnAddWorkout.StyleSuccess();
-        this.btnAddWorkout.Anchor = System.Windows.Forms.AnchorStyles.Top;
+        this.btnAddWorkout.Anchor = AnchorStyles.Top;
         this.btnAddWorkout.Location = new System.Drawing.Point(180, 20);
         this.btnAddWorkout.Name = "btnAddWorkout";
         this.btnAddWorkout.Size = new System.Drawing.Size(155, 40);
@@ -130,7 +131,7 @@ partial class MainForm
         // 
         // flpWorkouts
         // 
-        this.flpWorkouts.Anchor = ((AnchorStyles)(((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right));
+        this.flpWorkouts.Anchor = ((AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right));
         this.flpWorkouts.AutoScroll = true;
         this.flpWorkouts.BackColor = UiConstants.Colors.BackgroundDark;
         this.flpWorkouts.Location = new System.Drawing.Point(20, 75);
@@ -142,16 +143,16 @@ partial class MainForm
         // MainForm
         // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(900, 650);
+        this.AutoScaleMode = AutoScaleMode.Font;
+        this.ClientSize = new System.Drawing.Size(910, 650);
         this.Controls.Add(this.panelMain);
         this.Controls.Add(this.panelTop);
         this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         this.MaximizeBox = false;
         this.Name = "MainForm";
-        this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        this.StartPosition = FormStartPosition.CenterScreen;
         this.Text = "Fitness Tracker";
-        this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+        this.FormClosing += new FormClosingEventHandler(this.MainForm_FormClosing);
         this.panelTop.ResumeLayout(false);
         this.panelTop.PerformLayout();
         this.panelMain.ResumeLayout(false);

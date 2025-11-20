@@ -1,3 +1,4 @@
+using System.Windows.Forms;
 using FitnessTracker.UI;
 
 namespace FitnessTracker.Forms;
@@ -59,7 +60,7 @@ partial class AddWorkoutForm
         this.panelMain.Controls.Add(this.btnRemoveExercise);
         this.panelMain.Controls.Add(this.btnSave);
         this.panelMain.Controls.Add(this.btnCancel);
-        this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+        this.panelMain.Dock = DockStyle.Fill;
         this.panelMain.Location = new System.Drawing.Point(0, 0);
         this.panelMain.Name = "panelMain";
         this.panelMain.Padding = new Padding(30);
@@ -98,7 +99,7 @@ partial class AddWorkoutForm
         this.txtWorkoutName.Size = new System.Drawing.Size(350, 20);
         this.txtWorkoutName.Padding = new Padding(top: 10, left: 5, bottom: 10, right: 5);
         this.txtWorkoutName.TabIndex = 2;
-        this.txtWorkoutName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+        this.txtWorkoutName.TextAlign = HorizontalAlignment.Left;
         
         // 
         // lblDate
@@ -116,7 +117,7 @@ partial class AddWorkoutForm
         // 
         this.dtpWorkoutDate.CalendarMonthBackground = UiConstants.Colors.BackgroundMedium;
         this.dtpWorkoutDate.Font = new System.Drawing.Font("Segue UI", 12F);
-        this.dtpWorkoutDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+        this.dtpWorkoutDate.Format = DateTimePickerFormat.Short;
         this.dtpWorkoutDate.Location = new System.Drawing.Point(420, 120);
         this.dtpWorkoutDate.Name = "dtpWorkoutDate";
         this.dtpWorkoutDate.Size = new System.Drawing.Size(330, 40);
@@ -198,14 +199,14 @@ partial class AddWorkoutForm
         // AddWorkoutForm
         // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        this.AutoScaleMode = AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(800, 650);
         this.Controls.Add(this.panelMain);
-        this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+        this.FormBorderStyle = FormBorderStyle.FixedDialog;
         this.MaximizeBox = false;
         this.MinimizeBox = false;
         this.Name = "AddWorkoutForm";
-        this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+        this.StartPosition = FormStartPosition.CenterParent;
         this.Text = "Add Workout - Fitness Tracker";
         this.panelMain.ResumeLayout(false);
         this.panelMain.PerformLayout();

@@ -1,21 +1,21 @@
 using FitnessTracker.UI;
-
+using System.Windows.Forms;
 namespace FitnessTracker.Forms;
 
 partial class RegisterForm
 {
     private System.ComponentModel.IContainer components = null;
-    private System.Windows.Forms.Label lblTitle;
+    private Label lblTitle;
     private Label lblName;
-    private System.Windows.Forms.Label lblUsername;
+    private Label lblUsername;
     private Label lblPassword;
     private Label lblConfirmPassword;
-    private System.Windows.Forms.TextBox txtName;
-    private System.Windows.Forms.TextBox txtUsername;
+    private TextBox txtName;
+    private TextBox txtUsername;
     private TextBox txtPassword;
     private TextBox txtConfirmPassword;
     private Button btnRegister;
-    private System.Windows.Forms.Panel panelMain;
+    private Panel panelMain;
 
     protected override void Dispose(bool disposing)
     {
@@ -32,17 +32,17 @@ partial class RegisterForm
     /// </summary>
     private void InitializeComponent()
     {
-        lblTitle = new System.Windows.Forms.Label();
-        lblName = new System.Windows.Forms.Label();
-        lblUsername = new System.Windows.Forms.Label();
-        lblPassword = new System.Windows.Forms.Label();
-        lblConfirmPassword = new System.Windows.Forms.Label();
-        txtName = new System.Windows.Forms.TextBox();
-        txtUsername = new System.Windows.Forms.TextBox();
-        txtPassword = new System.Windows.Forms.TextBox();
-        txtConfirmPassword = new System.Windows.Forms.TextBox();
-        btnRegister = new System.Windows.Forms.Button();
-        panelMain = new System.Windows.Forms.Panel();
+        lblTitle = new Label();
+        lblName = new Label();
+        lblUsername = new Label();
+        lblPassword = new Label();
+        lblConfirmPassword = new Label();
+        txtName = new TextBox();
+        txtUsername = new TextBox();
+        txtPassword = new TextBox();
+        txtConfirmPassword = new TextBox();
+        btnRegister = new Button();
+        panelMain = new Panel();
         panelMain.SuspendLayout();
         SuspendLayout();
         // 
@@ -156,7 +156,7 @@ partial class RegisterForm
         panelMain.Controls.Add(lblConfirmPassword);
         panelMain.Controls.Add(txtConfirmPassword);
         panelMain.Controls.Add(btnRegister);
-        panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+        panelMain.Dock = DockStyle.Fill;
         panelMain.Location = new System.Drawing.Point(0, 0);
         panelMain.Name = "panelMain";
         panelMain.Size = new System.Drawing.Size(540, 600);
@@ -165,13 +165,13 @@ partial class RegisterForm
         // RegisterForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(540, 600);
         Controls.Add(panelMain);
-        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+        FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
         MinimizeBox = true;
-        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        StartPosition = FormStartPosition.CenterScreen;
         Text = "Register - Fitness Tracker";
         panelMain.ResumeLayout(false);
         panelMain.PerformLayout();

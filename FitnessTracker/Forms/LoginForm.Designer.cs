@@ -7,14 +7,14 @@ namespace FitnessTracker.Forms;
 partial class LoginForm
 {
     private System.ComponentModel.IContainer components = null;
-    private System.Windows.Forms.Label lblTitle;
+    private Label lblTitle;
     private Label lblUsername;
     private Label lblPassword;
     private TextBox txtUsername;
     private TextBox txtPassword;
     private Button btnLogin;
     private Label lblRegisterLink;
-    private System.Windows.Forms.Panel panelMain;
+    private Panel panelMain;
 
     protected override void Dispose(bool disposing)
     {
@@ -31,14 +31,14 @@ partial class LoginForm
     /// </summary>
     private void InitializeComponent()
     {
-        lblTitle = new System.Windows.Forms.Label();
-        lblUsername = new System.Windows.Forms.Label();
-        lblPassword = new System.Windows.Forms.Label();
-        txtUsername = new System.Windows.Forms.TextBox();
-        txtPassword = new System.Windows.Forms.TextBox();
-        btnLogin = new System.Windows.Forms.Button();
-        lblRegisterLink = new System.Windows.Forms.Label();
-        panelMain = new System.Windows.Forms.Panel();
+        lblTitle = new Label();
+        lblUsername = new Label();
+        lblPassword = new Label();
+        txtUsername = new TextBox();
+        txtPassword = new TextBox();
+        btnLogin = new Button();
+        lblRegisterLink = new Label();
+        panelMain = new Panel();
         panelMain.SuspendLayout();
         SuspendLayout();
         // 
@@ -104,7 +104,7 @@ partial class LoginForm
         // 
         // lblRegisterLink
         // 
-        lblRegisterLink.Cursor = System.Windows.Forms.Cursors.Hand;
+        lblRegisterLink.Cursor = Cursors.Hand;
         lblRegisterLink.Font = new System.Drawing.Font("Segue UI", 10F);
         lblRegisterLink.ForeColor = UiConstants.Colors.Primary;
         lblRegisterLink.Location = new System.Drawing.Point(100, 370);
@@ -127,7 +127,7 @@ partial class LoginForm
         panelMain.Controls.Add(txtPassword);
         panelMain.Controls.Add(btnLogin);
         panelMain.Controls.Add(lblRegisterLink);
-        panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+        panelMain.Dock = DockStyle.Fill;
         panelMain.Location = new System.Drawing.Point(0, 0);
         panelMain.Name = "panelMain";
         panelMain.Size = new System.Drawing.Size(540, 600);
@@ -136,13 +136,13 @@ partial class LoginForm
         // LoginForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(540, 450);
         Controls.Add(panelMain);
-        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+        FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
         MinimizeBox = true;
-        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        StartPosition = FormStartPosition.CenterScreen;
         Text = "Login - Fitness Tracker";
         panelMain.ResumeLayout(true);
         panelMain.PerformLayout();

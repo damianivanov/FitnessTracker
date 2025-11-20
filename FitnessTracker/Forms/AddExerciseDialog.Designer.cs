@@ -1,3 +1,4 @@
+using System.Windows.Forms;
 using FitnessTracker.UI;
 
 namespace FitnessTracker.Forms;
@@ -55,7 +56,7 @@ partial class AddExerciseDialog
         this.panelMain.Controls.Add(this.nudWeight);
         this.panelMain.Controls.Add(this.btnAdd);
         this.panelMain.Controls.Add(this.btnCancel);
-        this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+        this.panelMain.Dock = DockStyle.Fill;
         this.panelMain.Location = new System.Drawing.Point(0, 0);
         this.panelMain.Name = "panelMain";
         this.panelMain.Padding = new Padding(30);
@@ -89,8 +90,8 @@ partial class AddExerciseDialog
         // cmbExercise
         // 
         this.cmbExercise.BackColor = UiConstants.Colors.BackgroundMedium;
-        this.cmbExercise.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-        this.cmbExercise.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        this.cmbExercise.DropDownStyle = ComboBoxStyle.DropDownList;
+        this.cmbExercise.FlatStyle = FlatStyle.Flat;
         this.cmbExercise.Font = new System.Drawing.Font("Segue UI", 11F);
         this.cmbExercise.ForeColor = UiConstants.Colors.TextPrimary;
         this.cmbExercise.FormattingEnabled = true;
@@ -114,7 +115,7 @@ partial class AddExerciseDialog
         // nudReps
         // 
         this.nudReps.BackColor = UiConstants.Colors.BackgroundMedium;
-        this.nudReps.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        this.nudReps.BorderStyle = BorderStyle.FixedSingle;
         this.nudReps.Font = new System.Drawing.Font("Segue UI", 12F);
         this.nudReps.ForeColor = UiConstants.Colors.TextPrimary;
         this.nudReps.Location = new System.Drawing.Point(30, 200);
@@ -124,7 +125,7 @@ partial class AddExerciseDialog
         this.nudReps.Size = new System.Drawing.Size(200, 40);
         this.nudReps.TabIndex = 4;
         this.nudReps.Value = new decimal(new int[] { 10, 0, 0, 0 });
-        this.nudReps.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+        this.nudReps.TextAlign = HorizontalAlignment.Center;
         
         // 
         // lblWeight
@@ -141,7 +142,7 @@ partial class AddExerciseDialog
         // nudWeight
         // 
         this.nudWeight.BackColor = UiConstants.Colors.BackgroundMedium;
-        this.nudWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        this.nudWeight.BorderStyle = BorderStyle.FixedSingle;
         this.nudWeight.DecimalPlaces = 1;
         this.nudWeight.Font = new System.Drawing.Font("Segue UI", 12F);
         this.nudWeight.ForeColor = UiConstants.Colors.TextPrimary;
@@ -152,7 +153,7 @@ partial class AddExerciseDialog
         this.nudWeight.Size = new System.Drawing.Size(200, 40);
         this.nudWeight.TabIndex = 6;
         this.nudWeight.Value = new decimal(new int[] { 20, 0, 0, 0 });
-        this.nudWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+        this.nudWeight.TextAlign = HorizontalAlignment.Center;
         
         // 
         // btnAdd
@@ -182,13 +183,13 @@ partial class AddExerciseDialog
         // AddExerciseDialog
         // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        this.AutoScaleMode = AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(500, 400);
         this.Controls.Add(this.panelMain);
-        this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+        this.FormBorderStyle = FormBorderStyle.FixedDialog;
         this.MaximizeBox = false;
         this.Name = "AddExerciseDialog";
-        this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+        this.StartPosition = FormStartPosition.CenterParent;
         this.Text = "Add Exercise";
         this.panelMain.ResumeLayout(false);
         this.panelMain.PerformLayout();
