@@ -13,4 +13,10 @@
       <PackageReference Include="LiteDB" Version="6.0.0-prerelease.73" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Assets\initialExerciseTemplates.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

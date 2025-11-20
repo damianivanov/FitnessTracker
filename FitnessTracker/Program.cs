@@ -1,16 +1,26 @@
+using FitnessTracker.Core;
+using FitnessTracker.Services;
+using FitnessTracker.Forms;
+
 namespace FitnessTracker;
 
 static class Program
 {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
     [STAThread]
     static void Main()
     {
-        // To customize application configuration such as set high DPI settings or default font,
-        // see https://aka.ms/applicationconfiguration.
         ApplicationConfiguration.Initialize();
-        Application.Run(new Form1());
+
+        using var db = new Db();
+        ExerciseSeeder.Seed(db);
+        
+        var loginForm = new LoginForm(db);
+        if (loginForm.ShowDialog() != DialogResult.OK || loginForm.LoggedInUser == null)
+        {
+            return;
+        }
+        var user = loginForm.LoggedInUser;
+        AppSession.Login(user);
+        Application.Run(new MainForm(db));
     }
 }

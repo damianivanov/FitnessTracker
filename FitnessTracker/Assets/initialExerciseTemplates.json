@@ -1,0 +1,551 @@
+[
+    {
+        "name": "Leg Press",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Seated Chest Press",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Lat Pulldown",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lats",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Biceps"
+    },
+    {
+        "name": "Seated Row",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lats",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Rhomboids"
+    },
+    {
+        "name": "Leg Curl",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Hamstrings",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Leg Extension",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Cable Triceps Pushdown",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Triceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Cable Biceps Curl",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Biceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Cable Crossover",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Front Deltoids"
+    },
+    {
+        "name": "Pec Deck",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Assisted Pull-Up",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lats",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Biceps"
+    },
+    {
+        "name": "Smith Machine Squat",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Smith Machine Bench Press",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Cable Lateral Raise",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lateral Deltoids",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Hip Abduction Machine",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Abductors",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Hip Adduction Machine",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Adductors",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Barbell Squat",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Barbell Deadlift",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Hamstrings",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Lower Back"
+    },
+    {
+        "name": "Barbell Bench Press",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Barbell Overhead Press",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Shoulders",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Barbell Bent-Over Row",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lats",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Rhomboids"
+    },
+    {
+        "name": "Barbell Curl",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Biceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Barbell Lunge",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Barbell Romanian Deadlift",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Hamstrings",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Barbell Hip Thrust",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Glutes",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Hamstrings"
+    },
+    {
+        "name": "Barbell Shrug",
+        "equipment": "Barbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Traps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Dumbbell Bench Press",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Dumbbell Shoulder Press",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Shoulders",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Dumbbell Lateral Raise",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lateral Deltoids",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Dumbbell Bicep Curl",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Biceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Dumbbell Triceps Kickback",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Triceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Dumbbell Row",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lats",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Rhomboids"
+    },
+    {
+        "name": "Dumbbell Chest Fly",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Front Deltoids"
+    },
+    {
+        "name": "Dumbbell Goblet Squat",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Dumbbell Deadlift",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Hamstrings",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Dumbbell Bulgarian Split Squat",
+        "equipment": "Dumbbell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Cable Face Pull",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Rear Deltoids",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Traps"
+    },
+    {
+        "name": "Cable Woodchopper",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Obliques",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Abs"
+    },
+    {
+        "name": "Cable Pull-Through",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Glutes",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Hamstrings"
+    },
+    {
+        "name": "Cable Overhead Triceps Extension",
+        "equipment": "Cable",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Triceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Push-Up",
+        "equipment": "Bodyweight",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Pull-Up",
+        "equipment": "Bodyweight",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lats",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Biceps"
+    },
+    {
+        "name": "Dips",
+        "equipment": "Bodyweight",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Triceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Chest"
+    },
+    {
+        "name": "Plank",
+        "equipment": "Bodyweight",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Abs",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Transverse Abdominis"
+    },
+    {
+        "name": "Bodyweight Squat",
+        "equipment": "Bodyweight",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Lunge",
+        "equipment": "Bodyweight",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Kettlebell Swing",
+        "equipment": "Kettlebell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Glutes",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Hamstrings"
+    },
+    {
+        "name": "Kettlebell Goblet Squat",
+        "equipment": "Kettlebell",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Quads",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Glutes"
+    },
+    {
+        "name": "Sled Push",
+        "equipment": "Other",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Full Body",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": null
+    },
+    {
+        "name": "Battle Ropes",
+        "equipment": "Other",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Shoulders",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Forearms"
+    },
+    {
+        "name": "High Row",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Back",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Biceps"
+    },
+    {
+        "name": "Deltoid Press",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Shoulders",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Super Vertical Chest Press",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    },
+    {
+        "name": "Super High Row",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Back",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Rear Deltoids"
+    },
+    {
+        "name": "Super Inclined Bench Press",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Upper Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Shoulders"
+    },
+    {
+        "name": "Pullover Machine",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lats",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Chest"
+    },
+    {
+        "name": "Pulley Row",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Back",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Biceps"
+    },
+    {
+        "name": "Pectoral Machine",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Front Deltoids"
+    },
+    {
+        "name": "Super Middle Chest Flight Machine",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Chest",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Shoulders"
+    },
+    {
+        "name": "Lateral Deltoid",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Lateral Deltoids",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Traps"
+    },
+    {
+        "name": "Standing Total Arms",
+        "equipment": "Machine",
+        "category": "Strength",
+        "isPublic": true,
+        "muscleGroupName": "Biceps",
+        "photoUrl": "",
+        "secondaryMuscleGroupName": "Triceps"
+    }
+]

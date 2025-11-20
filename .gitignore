@@ -8,3 +8,5 @@ FitnessTracker/obj/
 .env.development.local/
 .env.test.local/
 .env.production.local/
+FitnessTracker/Core/database.db
+FitnessTracker/Core/database-log.db
